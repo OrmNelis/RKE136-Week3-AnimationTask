@@ -36,6 +36,7 @@ html {
     height: 500px;
     border-radius:5%;
     position: relative;
+    cursor:pointer;
     left: -50rem;
     animation: slide-from-left 3s ease-in-out forwards;
 }
@@ -45,6 +46,47 @@ html {
     100% {left: 0;}
     
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(119, 118, 116, 0.63);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: rgba(92, 92, 90, 0.897);
+    color: #fff;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+
+.movie-poster-modal {
+    width: 300px;
+    border-radius: 5%;
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
 
 .movie-rating {
     display: inline;
