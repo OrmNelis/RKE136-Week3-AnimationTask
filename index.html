@@ -21,13 +21,13 @@
                 <span class="movie-duration">1h 55m</span>
             </p>
             <div class="movie-poster-container">
-                <img class=movie-poster src="images/freeGuy.jpg" alt="Free Guy Poster">
+                <img class="movie-poster" src="images/freeGuy.jpg" alt="Free Guy Poster">
             </div>
 
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="closeBtn">&times;</span>
-                    <img src="" alt="" class="movie-poster-modal">
+                    <img alt="" class="movie-poster-modal">
                     <h1 class="modal-movie-title">Free Guy! (2021)</h1>
                 </div>
             </div>
@@ -38,6 +38,28 @@
                 <h2 class="movie-info-overview-title">overview</h2>
                 <p class="movie-info-overview">A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline.</p>
 
+                <div class="carousel">
+                    <div class="carousel__item carousel__item--visible ">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+        
+                    <div class="carousel__item">
+                        <img src="images/2.jpg" alt="">
+                    </div>
+        
+                    <div class="carousel__item">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+        
+                    <div class="carousel__actions">
+                        <button id="carousel__button--prev" aria-label="Previous slide"><</button>
+                        <button id="carousel__button--next" aria-label="Next slide">></button>
+                    </div>
+        
+                </div>
+                <div>
+
+                </div>
                 <div class="movie-info-actions">
                     <ul>
                         <li><a href="#" class="add-fav"><i class="fas fa-heart"></i></a></li>
@@ -45,26 +67,26 @@
                         <li><a href="#" class="rate-movie"><i class="fas fa-star-half-alt"></i></a></li>
                     </ul>
                 </div>
+
+                <footer>
+                    <h3>Find me to discuss the movie</h3>
+                     
+                    <ul>
+                        <li> <a href="#">Twitter <i class="fa-brands fa-twitter"></i></a></li>
+                        <li> <a href="#">Instagram <i class="fa-brands fa-instagram"></i></i></a> </li>
+                        <li> <a href="#">Facebook <i class="fa-brands fa-facebook"></i></a> </li>
+                    </ul>
+            
+                    <p>Orm Nelis &#169; 2023</p>
+            
+                </footer>
+                
             </div>
         </div>
-
-        <footer>
-            <h3>Find me to discuss the movie</h3>
-             
-            <ul>
-                <li> <a href="#">Twitter <i class="fab fa-twitter"></i></a></li>
-                <li> <a href="#">Instagram <i class="fab fa-instagram"></i></a> </li>
-                <li> <a href="#">Facebook <i class="fab fa-facebook"></i></a> </li>
-            </ul>
-    
-            <p>Orm Nelis &#169; 2023</p>
-    
-        </footer>
-
-
     </div>
     
     <script src="scripts/app.js"></script>
+    <script src="scripts/carousel.js"></script>
 
 </body>
 </html>
